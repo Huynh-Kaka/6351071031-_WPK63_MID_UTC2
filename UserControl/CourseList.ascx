@@ -5,7 +5,7 @@
        <asp:Label ID="NameLabel" runat="server" Text='<%# Eval("Name") %>' />
       <asp:Image ID="Image1" runat="server" Width ="100px" Height="100px" ImageUrl='<%# "~/img/Courses/" + Eval("ImageFilePath")%>' /><br />
        <asp:Label ID="DescriptionLabel" runat="server" Text='<%# Eval("Description") %>' />
-        
+        <asp:HyperLink ID="HyperLink1" NavigateUrl='<%#"~/Details.aspx?id="+Eval("Id") %>' runat="server">View Details</asp:HyperLink>
    </div>
        </ItemTemplate>
 </asp:ListView>

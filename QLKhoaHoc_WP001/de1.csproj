@@ -43,13 +43,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -73,80 +67,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Course.aspx" />
     <Content Include="Global.asax" />
     <Content Include="home.aspx" />
-    <Content Include="img\Courses\3d_modeling.jpg" />
-    <Content Include="img\Courses\agile_pm.jpg" />
-    <Content Include="img\Courses\bigdata_spark.jpg" />
-    <Content Include="img\Courses\business_analytics.jpg" />
-    <Content Include="img\Courses\content_marketing.jpg" />
-    <Content Include="img\Courses\csharp.jpg" />
-    <Content Include="img\Courses\cybersecurity_intro.jpg" />
-    <Content Include="img\Courses\deep_learning.jpg" />
-    <Content Include="img\Courses\digital_forensics.jpg" />
-    <Content Include="img\Courses\digital_marketing.jpg" />
-    <Content Include="img\Courses\entrepreneurship.jpg" />
-    <Content Include="img\Courses\ethical_hacking.jpg" />
-    <Content Include="img\Courses\financial_accounting.jpg" />
-    <Content Include="img\Courses\google_ads.jpg" />
-    <Content Include="img\Courses\java_advanced.jpg" />
-    <Content Include="img\Courses\js_webdev.jpg" />
-    <Content Include="img\Courses\kotlin_intro.jpg" />
-    <Content Include="img\Courses\leadership.jpg" />
-    <Content Include="img\Courses\ml_python.jpg" />
-    <Content Include="img\Courses\motion_graphics.jpg" />
-    <Content Include="img\Courses\network_security.jpg" />
-    <Content Include="img\Courses\operations_management.jpg" />
-    <Content Include="img\Courses\penetration_testing.jpg" />
-    <Content Include="img\Courses\photoshop.jpg" />
-    <Content Include="img\Courses\pmp_prep.jpg" />
-    <Content Include="img\Courses\project_management_basics.jpg" />
-    <Content Include="img\Courses\python_beginners.jpg" />
-    <Content Include="img\Courses\python_datasci.jpg" />
-    <Content Include="img\Courses\risk_management.jpg" />
-    <Content Include="img\Courses\scrum_master.jpg" />
-    <Content Include="img\Courses\seo.jpg" />
-    <Content Include="img\Courses\social_media.jpg" />
-    <Content Include="img\Courses\tableau.jpg" />
-    <Content Include="img\Courses\ux_ui.jpg" />
-    <Content Include="img\Courses\web_design.jpg" />
     <Content Include="ManageCategory.aspx" />
     <Content Include="ManageProduct.aspx" />
-    <Content Include="QLKhoaHoc.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>QLKhoaHoc.Context.cs</LastGenOutput>
-      <DependentUpon>QLKhoaHoc.edmx</DependentUpon>
-    </Content>
-    <Content Include="QLKhoaHoc.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLKhoaHoc.edmx</DependentUpon>
-      <LastGenOutput>QLKhoaHoc.cs</LastGenOutput>
-    </Content>
     <Content Include="service.aspx" />
     <Content Include="style.css" />
-    <Content Include="UserControl\CourseCategory.ascx" />
-    <Content Include="UserControl\CourseList.ascx" />
-    <Content Include="UserControl\Detail.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Category.cs">
-      <DependentUpon>QLKhoaHoc.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Course.aspx.cs">
-      <DependentUpon>Course.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Course.aspx.designer.cs">
-      <DependentUpon>Course.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Course.cs">
-      <DependentUpon>QLKhoaHoc.tt</DependentUpon>
-    </Compile>
     <Compile Include="DefaultPageMaster.Master.cs">
       <DependentUpon>DefaultPageMaster.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DefaultPageMaster.Master.designer.cs">
       <DependentUpon>DefaultPageMaster.Master</DependentUpon>
@@ -176,21 +107,6 @@
       <DependentUpon>ManageProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLKhoaHoc.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLKhoaHoc.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="QLKhoaHoc.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLKhoaHoc.tt</DependentUpon>
-    </Compile>
-    <Compile Include="QLKhoaHoc.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLKhoaHoc.edmx</DependentUpon>
-    </Compile>
     <Compile Include="service.aspx.cs">
       <DependentUpon>service.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -198,38 +114,10 @@
     <Compile Include="service.aspx.designer.cs">
       <DependentUpon>service.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\CourseCategory.ascx.cs">
-      <DependentUpon>CourseCategory.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserControl\CourseCategory.ascx.designer.cs">
-      <DependentUpon>CourseCategory.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\CourseList.ascx.cs">
-      <DependentUpon>CourseList.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserControl\CourseList.ascx.designer.cs">
-      <DependentUpon>CourseList.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\Detail.ascx.cs">
-      <DependentUpon>Detail.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserControl\Detail.ascx.designer.cs">
-      <DependentUpon>Detail.ascx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DefaultPageMaster.Master" />
     <None Include="packages.config" />
-    <EntityDeploy Include="QLKhoaHoc.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>QLKhoaHoc.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="QLKhoaHoc.edmx.diagram">
-      <DependentUpon>QLKhoaHoc.edmx</DependentUpon>
-    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -241,9 +129,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Folder Include="UserControl\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
